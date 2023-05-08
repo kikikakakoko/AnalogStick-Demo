@@ -80,7 +80,8 @@ class GameScene: SKScene {
 			let pVelocity = joystick.velocity;
 			let speed = CGFloat(0.12)
             
-			appleNode.position = CGPoint(x: appleNode.position.x + (pVelocity.x * speed), y: appleNode.position.y + (pVelocity.y * speed))
+			//appleNode.position = CGPoint(x: appleNode.position.x + (pVelocity.x * speed), y: appleNode.position.y + (pVelocity.y * speed))
+            self.airplain!.position = CGPoint(x: self.airplain!.position.x + (pVelocity.x * speed), y: self.airplain!.position.y + (pVelocity.y * speed))
 		}
         
 		
